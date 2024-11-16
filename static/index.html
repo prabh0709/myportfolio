@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Team</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #050100;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .about-team {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Eiffel Tower Style */
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* Row 1 - 3 Members */
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .row-1 {
+            justify-content: space-between;
+            width: 70%; /* Increased width for first row */
+        }
+
+        .row-2 {
+            justify-content: space-around;
+            width: 50%; /* Increased width for second row */
+        }
+
+        /* Member card styles */
+        .member {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 30px; /* Increased padding */
+            width: 250px; /* Increased width */
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 380px; /* Increased height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures content is distributed evenly */
+            align-items: center;
+            margin-bottom: 20px; /* Adds space between cards */
+        }
+
+        .member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .member img {
+            width: 180px; /* Increased image size */
+            height: 180px; /* Increased image size */
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .member img:hover {
+            transform: scale(1.1);
+        }
+
+        .member h2 {
+            font-size: 2em; /* Increased font size */
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .member p {
+            font-size: 1.1em; /* Increased font size */
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #050100;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Team</h1>
+        <p>Meet the talented individuals who drive our success.</p>
+    </header>
+
+    <main>
+        <section class="about-team">
+            <h2>About Our Team</h2>
+            <p>Our team consists of diverse professionals who bring a variety of skills and expertise to the table. From visionary leadership to hands-on development, we work together to achieve excellence in every project.</p>
+        </section>
+
+        <section class="team">
+            <!-- Row 1 - 3 Members -->
+            <div class="row row-1">
+                <div class="member">
+                    <h2>Kamaldeep Kaur</h2>
+                    <p><strong>Role:</strong>Lead Developer</p>
+                    <p>Guides the coding process, ensures adherence to best practices, and integrates components.</p>
+                </div>
+
+                <div class="member">
+                    <h2>Priyanka Rani</h2>
+                    <p><strong>Role:</strong>Lead Developer</p>
+                    <p>Leads the development team in creating efficient, scalable systems and drives decision-making.</p>
+                </div>
+
+                <div class="member">
+                    <h2>Manpreet Kaur</h2>
+                    <p><strong>Role:</strong>Test Engineer</p>
+                    <p>Focuses on writing and executing tests, ensuring code quality and reliability.</p>
+                </div>
+            </div>
+
+            <!-- Row 2 - 2 Members -->
+            <div class="row row-2">
+                <div class="member">
+                    <h2>Prabhjot Kaur</h2>
+                    <p><strong>Role:</strong>Project Manager</p>
+                    <p>Oversees the planning and execution of projects, ensuring deadlines are met and clients are satisfied.</p>
+                </div>
+
+                <div class="member">
+                    <h2>Armaandeep Singh</h2>
+                    <p><strong>Role:</strong> Documentation Specialist</p>
+                    <p>Prepares comprehensive documentation for users and developers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Team. All rights reserved.</p>
+    </footer>
+</body>
+</html>
